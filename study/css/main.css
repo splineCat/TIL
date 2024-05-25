@@ -1,0 +1,15 @@
+.alert-box {
+    background-color: rgb(162, 162, 255);
+    color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert-box1 {
+    background-color: rgb(162, 162, 255);
+    color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}

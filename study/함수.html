@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../study/css/main.css">
+    <title>Alert창 만들기</title>
+</head>
+<body>
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="hey">메로나</h2>
+</body>
+    <script>
+        document.getElementById('hello').innerHTML = '안녕';
+        document.getElementById('hello').style.fontSize = '50px';
+        
+
+        // document.getElementById('hello').innerHTML = '안녕';
+        // document.getElementById('???').??? = '???'; 구조(3군데)
+        // document(의)getElementById('바꾸고 싶은 요소')(의)innerHTML(~ 바꾸고 싶은 디자인 요소들) = '무엇으로';
+
+        document.getElementById('hey').innerHTML = '바밤바';
+
+        // = 은 같다가 아니라 대입
+        // ''은 문자 자료형을 나타남
+        // document.getElementById('hello') 부분을 셀렉터라 부름
+    </script>
+    <div class="alert-box" id="alert">Alert 박스<button onclick="boxOpen('none')">닫기</button></div>
+    <button onclick="boxOpen('block')">열기</button>
+    
+    <script>
+        // function boxOpen(){
+        //     document.getElementById('alert').style.display = 'block';
+        // }
+        // function boxClose(){
+        //     document.getElementById('alert').style.display = 'none';
+        // } ----- 1.예시 함수 코드가 비슷한게 많이 쓰이 
+        //1.함수: 긴걸 짧게 축약
+        //2. 함수의 파라미터 기능: 코드를 줄여주는 기능
+        function boxOpen(i){
+            document.getElementById('alert').style.display = i;
+        }
+        
+    </script>
+    
+    
+
+</html>

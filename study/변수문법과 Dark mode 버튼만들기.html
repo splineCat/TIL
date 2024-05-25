@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 변수 - 잠깐 자료를 보관하는 장소 -->
+    <!-- 변수를 쓰는 이유 1. 자료가 방대하고 복잡할 때 2.특정값(횟수)를 기억하게 하고 싶은 기억저장소 -->
+
+    <span class="badge bg-dark" id="btn">Dark 🔄</span>
+
+    <!-- 변수에 +1 하는 법
+    - 변수명++
+    - 변수 += 1
+    - 변수 = 변수 + 1 -->
+    <script>
+    // 버튼 누른 횟수가 홀수면 버튼 내부 글자를 Light로 변경해주세요~
+    // 버튼 누른 횟수가 짝수면 버튼 내부 글자를 Dark로 변경해주세요~
+    // let darkBtn = document.getElementById('btn').innerHTML = 'Dark'; 
+    // let lightBtn = document.getElementById('btn').innerHTML = 'Light';
+    // let clickCount = 0; 
+    
+
+
+    // 홀수번 누른 변수
+    clickCount = 0; // 1번 2번 3버 4번 5번 ...
+    // let clickCount = document.getElementById('btn')
+
+    document.getElementById('btn').addEventListener('click',()=>{
+        clickCount += 1;
+        if(clickCount % 2 == 1)
+            document.getElementById('btn').innerHTML = 'Dark 🔄';
+        
+        if(clickCount % 2 == 0)
+            document.getElementById('btn').innerHTML = 'Light 🔄';
+        
+        
+    });
+    // consol.log(clickCount);
+    // 짝수번 누른 변수
+
+    //변수에는 선언, 할당, 범위
+// let 이름 = Kim; 선언 변수를 만드는것
+//  할당 변수에 자료를 넣는 것 - 할당이 주어지지 않으며 undifined  // 이름 = 'Park' 은 재할당
+//  함수 안에서 만든 변수는 함수 안에서만 사용가능 범위 조심
+
+// let 은 재선언 불가능
+// const은 재선언 재할당 불가능 - 변하지 않는값을 넣으면 됨. 상수
+    
+    </script>
+</body>
+</html>

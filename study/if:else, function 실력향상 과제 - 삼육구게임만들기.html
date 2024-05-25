@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>삼육구 게임</h1>
+    <script>
+    function game(num){
+        if(num % 9 == 0){
+        console.log("박수두번");
+        }
+        else if (num % 3 == 0){
+        console.log("박수");
+        } 
+        else {
+        console.log("통과");
+        }
+    }
+    game(9);    
+        
+    // if else(만약 아니라면)
+    //     console.log('통과');
+
+// 공인중개사 시험점수를 입력하면 합격인지 알려주는 함수를 만들어봅시다.
+// 공인중개사 1차 시험은 개론, 민법 2개 과목이 있습니다.
+// 과목마다 100점 만점이지만 두 과목 합해서 120점 이상이면 합격시켜줍니다. 
+// 다만 한 과목이 40점 미만이면 과락으로 불합격됩니다.  
+// 과목 점수 2개를 파라미터로 입력하면 합격인지 불합격인지 여부를 콘솔창에 출력하는 함수를 만들어보십시오. 
+
+// let test1 = ``
+// let test2 = ``
+function testResult(test1,test2){
+    if(test1 + test2 >= 120 && test1 > 40 && test2 > 40) {
+        console.log("합격");
+        //합격
+        //테스트1 + 테스트2 = 120이상
+        //테스트1, 테스트2 > 40
+    }
+    else {
+        console.log("불합격");
+    }
+};
+testResult(50, 50);
+
+// (응용) 원래의 369게임 룰을 적용하려면 어떻게 해야할까요?
+// 3의 배수에서 박수를 치는게 아니라 끝자리가 3,6,9로 끝나는 숫자라면 '박수'를 출력되게 하는겁니다. 
+function 삼육구게임(num){
+    if(num.lastIndexOf == 3 || num.lastIndexOf == 6 || num.lastIndexOf == 9){
+    console.log("박수");
+    } 
+    else {
+        console.log("통과");
+}
+};
+삼육구게임(44);
+// 위에 조건문 틀림
+// 쳇 gpt
+function 삼육구게임(num) {
+    // 숫자를 문자열로 변환
+    let numStr = num.toString();
+    // 3, 6, 9 중 하나라도 포함되어 있는지 확인
+    if (numStr.lastIndexOf('3') !== -1 || numStr.lastIndexOf('6') !== -1 || numStr.lastIndexOf('9') !== -1) {
+        console.log("박수");
+    } else {
+        console.log("통과");
+    }
+}
+// lastIndexOf 메서드는 찾는 문자가 없으면 -1을 반환하므로, !== -1 조건을 사용하여 문자가 포함되어 있는지를 체크합니다.
+
+// 합격판독기에 0에서 100사이 숫자가 아닌걸 입력하면 장난치지 말라고 alert를 띄우려면 어떻게 코드짜야할까요? 이것도 간단하게 if문 알아서 추가해봅시다. 
+
+let test1 = ``;
+let test2 = ``;
+function testResult1(test1,test2){
+    if(test1 + test2 >= 120 && test1 > 40 && test2 > 40) {
+        console.log("합격");
+        //합격
+        //테스트1 + 테스트2 = 120이상
+        //테스트1, 테스트2 > 40
+    }
+    else {
+        console.log("불합격");
+    }
+    if(test1 > 100 || test2 > 100 || test1 < 0 || test2 < 0){
+    alert("장난치지 말라");
+}
+};
+testResult1(-1,1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="../study/css/main.css">
+<body>
+    <!-- 실습 : p 테그안 이름변경 하기 -->
+    <!-- addEventListener 배우기 : html에서 자바스크립트를 불러오는 onclick을 대신할 기능/ 예제 button부분을 이용 -->
+    
+    <div class="alert-box" id="alert">
+        <p id="tit">Alert 박스</p>
+        <button id="close">x</button>
+    </div>
+    <button onclick="openAlert('아이디를 입력해주세요')">버튼1</button>
+    <button onclick="openAlert('비밀번호를 입력해주세요')">버튼2</button>
+    
+    <script>
+        // 버튼1을 누르면 창이 열림/ '아이디를 입력해주세요'
+    function openAlert(i){
+        document.getElementById('tit').innerHTML = i;
+        document.getElementById('alert').style.display = 'block';
+    }
+
+    document.getElementById('close').addEventListener('click', function(){
+        document.getElementById('alert').style.display = 'none'
+    });
+
+    // addEventListener : ~에 있는 것을 클릭(이벤트)했을 때, 뒤에 부분을 실행해 달라
+    // click부분은 'event'라 불리다/ 다른 예시 :mouseover
+    
+
+
+    //     // 버튼2을 누르면 창이 '비밀번호를 입력해주세요'
+    // function nextAlert(){ 
+    //     document.getElementById('tit').innerHTML = '비밀번호를 입력해주세요'; ---- 위에 반복되는 가변적 요소가 있어서 파라미터의 기능을 이용해서 코드를 줄여줌
+    //     document.getElementById('alert').style.display = 'block';
+    // }
+    
+        
+    </script>
+    
+</body>
+</html>

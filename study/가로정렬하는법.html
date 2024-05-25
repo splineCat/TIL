@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+      display: flex;
+      gap: 10px;
+    }
+    .item {
+      padding: 10px;
+      background-color: lightgray;
+      border: 1px solid #ccc;
+    }
+  </style>
+<body>
+    <div class="flex-container" id="flex-container">
+        <!-- 자바스크립트로 추가할 요소들 -->
+      </div>
+    
+      <script>
+        const container = document.getElementById('flex-container');
+    
+        for (let i = 1; i <= 3; i++) {
+          const div = document.createElement('div');
+          div.className = 'item';
+          div.textContent = `Item ${i}`;
+          container.appendChild(div);
+        }
+
+        // 이 예제에서는 자바스크립트를 사용하여 <div> 요소를 생성하고 flex-container에 추가합니다. CSS를 사용하여 가로 정렬을 유지합니다.
+      </script>
+</body>
+</html>
