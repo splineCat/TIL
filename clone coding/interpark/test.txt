@@ -25,6 +25,7 @@ git branch 작명 : branch을 생성
 git switch master/main : switch는 branch간의 이동을 의미함
 git status 를 이용해 git의 상태를 확인함
 
+git 로컬브랜치임
 
 
 
