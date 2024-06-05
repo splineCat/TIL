@@ -22,4 +22,4 @@ branch 기능 : 프로젝트의 복사본 commit 의 복사본
 
 git branch 작명 : branch 생성
 
-git test
+git test 마스터 부분
