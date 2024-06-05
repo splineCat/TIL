@@ -12,3 +12,14 @@ git commit –m “커밋 메세지”
 추후에 돌아갈 수(Rollback) 있음
 
 병합(merge) : 2명 이상, 혹은 원격 저장소와 로컬 저장소의 같은 파일을 하나의 내용으로 합치는 작업
+
+---
+이전 버전과 차이점 출력
+git diff 와 git difftool
+
+---
+branch 기능 : 프로젝트의 복사본 commit 의 복사본
+
+git branch 작명 : branch 생성
+
+
