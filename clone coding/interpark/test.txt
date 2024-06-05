@@ -18,7 +18,7 @@ git commit –m “커밋 메세지”
 git diff 와 git difftool
 
 ---
-branch 기능 : 프로젝트의 복사본 commit 의 복사본
+branch 기능 : 프로젝트의 복사본 commit 의 복사본 - 독립적 개발 가능
 
 git branch 작명 : branch을 생성
 
