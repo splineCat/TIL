@@ -28,4 +28,9 @@ git switch master/main : switch는 branch간의 이동을 의미함
 git status 를 이용해 git의 상태를 확인함
 
 
-git test 마스터 부분
+merge 의 방식
+1. 3-way merge : 기본방식. 복잡할 수 있음
+2. git rebase 또는 git merge --squash 브랜치명 : 새로운 메인/마스터 생성으로 관리
+
+
+파일복구/ commit복구 / 과거로 이동가능
