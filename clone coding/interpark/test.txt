@@ -34,3 +34,14 @@ merge 의 방식
 
 
 파일복구/ commit복구 / 과거로 이동가능
+- 파일복구 : 
+    git restore 파일명 : 컴퓨터나 프로그램을 껐다켜도 사용가능
+    git restore --source 커밋아이디 파일명 : 특정 커밋아이디 시점으로 복구
+    git restore --staged 파일명 : 특정 파일 복구 취소
+
+- commit복구 :
+    git revert 커밋아이디 : 커밋 아이디에서 일어난 일만 취소 / 커밋을 삭제할 수도 있음
+
+    git reset --hard 커밋아이디 : 해당 파일 삭제 (협업시 조심) 
+        git reset --soft 아이디 : staging area에 남아있음
+        git reset --mixed 아이디 : staging area이 되지 않은 상태
