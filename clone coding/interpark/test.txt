@@ -1,3 +1,5 @@
+로컬저장소 및 원격저장소 설명
+
 githubTest
 
 git unit : 저장소 초기화
@@ -45,3 +47,6 @@ merge 의 방식
     git reset --hard 커밋아이디 : 해당 파일 삭제 (협업시 조심) 
         git reset --soft 아이디 : staging area에 남아있음
         git reset --mixed 아이디 : staging area이 되지 않은 상태
+
+원격 저장소에 올리기
+git push -u 원격저장소주소 main또는master
